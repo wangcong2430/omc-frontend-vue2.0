@@ -1,0 +1,257 @@
+@import "../assets/css/materialdesignicons.min.css";
+@import "../assets/css/omc.css";
+
+// 自定义页面加载进度条颜色
+#nprogress .bar {
+  background: #6b5aed !important;
+}
+
+/** 全局更改antd-vue的组件样式 */
+.item-control {
+  .iomc-form-item-control {
+    line-height: 0;
+  }
+}
+
+// 自定义页码样式
+.omc-pagination {
+  .iomc-pagination-item {
+    min-width        : 31px;
+    height       : 30px;
+    font-size    : 12px;
+    border-radius: 2px;
+    border       : none;
+  }
+  
+  .iomc-pagination-item-active {
+    background-color: #6b5aed;
+    font-weight     : normal;
+    border-color    : #6b5aed;
+  }
+  
+  .iomc-pagination-item-active a {
+    color: #fff;
+  }
+  
+  .iomc-pagination-item:focus,
+  .iomc-pagination-item:hover {
+    background-color: #6b5aed;
+    border-color    : #6b5aed;
+  }
+  
+  .iomc-pagination-item:focus a,
+  .iomc-pagination-item:hover a {
+    color: #fff;
+  }
+  
+  .iomc-pagination-prev,
+  .iomc-pagination-next {
+    min-width       : 60px;
+    height          : 30px;
+    background-color: #fff;
+    font-size       : 12px;
+    border-radius   : 2px;
+    border          : none;
+  }
+  
+  .iomc-pagination-prev:focus,
+  .iomc-pagination-prev:hover,
+  .iomc-pagination-next:focus,
+  .iomc-pagination-next:hover {
+    background-color: #6b5aed;
+    border-color    : #6b5aed;
+  }
+  
+  .iomc-pagination-prev:focus a,
+  .iomc-pagination-prev:hover a,
+  .iomc-pagination-next:focus a,
+  .iomc-pagination-next:hover a {
+    color: #fff;
+  }
+  
+  .iomc-pagination-disabled:hover,
+  .iomc-pagination-disabled:focus {
+    background-color: #fff;
+  }
+  
+  .iomc-pagination-disabled:hover a,
+  .iomc-pagination-disabled:focus a {
+    color: rgba(0, 0, 0, 0.25);
+  }
+  
+  .iomc-pagination-jump-prev .iomc-pagination-item-container .iomc-pagination-item-link-icon,
+  .iomc-pagination-jump-next .iomc-pagination-item-container .iomc-pagination-item-link-icon {
+    color: #6b5aed;
+  }
+  
+  .iomc-pagination-options-size-changer .iomc-select-selection--single {
+    height: 30px;
+  }
+  .iomc-pagination-options-size-changer .iomc-select-selection-selected-value {
+    font-size: 12px;
+  }
+}
+
+// 自定义级联样式
+.common-cascader {
+  .iomc-cascader-menu {
+    min-width: 300px;
+  }
+}
+
+// 自定义表格背景色
+.iomc-table-thead > tr > th {
+  background: #f5f6fa;
+}
+.iomc-table-tbody > tr.iomc-table-row-selected td {
+  background: #f5f6fa;
+}
+.iomc-table-thead > tr.iomc-table-row-hover:not(.iomc-table-expanded-row) > td, .iomc-table-tbody > tr.iomc-table-row-hover:not(.iomc-table-expanded-row) > td, .iomc-table-thead > tr:hover:not(.iomc-table-expanded-row) > td, .iomc-table-tbody > tr:hover:not(.iomc-table-expanded-row) > td {
+  background: #eff0f4;
+}
+
+// 上传文件组件
+.common-uploader {
+  .iomc-upload {
+    width: 70px;
+    height: 70px;
+    &.iomc-upload-select-picture-card {
+      i {
+        font-size: 20px;
+        color: #999;
+      }
+    }
+  }
+  .iomc-upload-list {
+    .iomc-upload-list-picture-card-container {
+      width: 70px;
+      height: 70px;
+      .iomc-upload-list-item {
+        width: 70px;
+        height: 70px;
+        .iomc-upload-list-item-info {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+// 内容制作费表单
+.expend-apply-form {
+  .iomc-checkbox-group {
+    .iomc-checkbox-group-item {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+// 需求列表嵌套表格
+.table-demand-list {
+  width: 100%;
+  margin-bottom: 15px;
+  table {
+    thead > tr > th {
+      font-size: 12px;
+      line-height: 20px;
+      color: #9fa3b5;
+      font-weight: bold;
+    }
+    tbody > tr > td {
+      font-size: 14px;
+      line-height: 20px;
+      vertical-align: top;
+    }
+    .iomc-table-row-expand-icon-cell {
+      width: 75px;
+      text-align: left;
+    }
+  }
+  .omc-inline-actions{
+    margin-top: -6px;
+    margin-bottom: -6px;
+  }
+  .table-material-list {
+    thead > tr > th {
+      background-color: inherit;
+    }
+    tbody > tr > td {
+      font-size: 13px;
+    }
+  }
+}
+
+// 需求管理自定义ant组件字体大小
+.omc-expend-box {
+  .iomc-input {
+    font-size: 12px;
+  }
+  .iomc-select {
+    font-size: 12px;
+  }
+  .iomc-input-number {
+    font-size: 12px;
+  }
+}
+
+.common-select-dropdown {
+  .iomc-select-dropdown-menu-item {
+    font-size: 12px !important;
+  }
+}
+
+div[id^='__qiankun_microapp_wrapper_'] {
+  height: 100%;
+}
+
+#subapp-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  .app-wrapper {
+    #iframe-wrapper {
+      width: auto;
+      height: calc(100vh - 165px );
+    }
+  }
+}
+
+.expend-from-item {
+  .iomc-form-explain {
+    font-size: 12px !important;
+  }
+}
+
+.iomc-tooltip-inner{
+  min-width: 380px;
+  padding: 12px;
+} 
+.iomc-select-selection__choice{
+  max-width: 90%;
+  padding: 0 16px 0 10px;
+}
+.iomc-select-selection__rendered{
+   margin-right: 2px;
+}
+
+.trans{
+  .iomc-input-number-input-wrap{
+    input{
+      color: rgba(0,0,0,0);
+    }
+  }
+
+}
+.wbp-popup{
+  .iomc-modal{ width: 710px !important;}
+}
+.hide-option{
+  display: none !important;
+}
+.relevant{
+  .iomc-form-item-label{
+    label::after{
+      display: none ;
+    }
+  }
+}

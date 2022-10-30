@@ -1,0 +1,5 @@
+export { default as AppMain } from './AppMain'
+export { default as SideBar } from './Sidebar/index.vue'
+export { default as PageHeader } from './PageHeader/index.vue'
+export { default as PageFooter } from './PageFooter/index.vue'
+export { default as Version } from './Version/index.vue'
